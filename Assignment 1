@@ -1,0 +1,25 @@
+vegetables=80
+eggs=7
+oil=200
+floor=60
+soap=80
+vq=int(input('Enter quantity of vegetables'))
+eq=int(input('Enter no of eggs'))
+oq=int(input('Enter quantity of oil'))
+fq=int(input('Enter quantity of floor'))
+sq=int(input('Enter no of soaps'))
+bill=(vegetables*vq)+(eggs*eq)+(oil*oq)+(floor*fq)+(soap*sq)
+if bill>5000:
+    dis=(bill*10)/100
+if bill>3000:
+    dis=(bill*8)/100
+if bill>2000:
+    dis=(bill*5)/100
+if bill>1000:
+    dis=(bill*3)/100
+if bill>3000:
+    tax=(bill*10)/100
+else:
+    tax=(bill*18)/100
+mainbill=bill+tax-dis
+print('bill:',mainbill)
